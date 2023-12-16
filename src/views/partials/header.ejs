@@ -1,36 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= view.title %></title>
-    <link rel="stylesheet" href="../css/index.css">
-</head>
-<body>
-    <header> <!--INICIO HEADER-->
-        <nav class="navbar container">
-            <picture class="navbar__logo">
-                <a href="../proyecto-integrador/index.html">
-                    <img src="multimedia/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funsoshop">
-                </a>
-            </picture>
-            <ul class="navbar__menu">
-                <li class="navbar__item with-submenu"><a class="navbar__link with-icon" href="../public/shop/shop.html" target="_blank" rel="noopener noreferrer">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
-                    <ul class="submenu">
-                        <li class="submenu__item"><a class="submenu__link" href="#" target="_blank" rel="noopener noreferrer">Funkos</a></li>
-                        <li class="submenu__item"><a class="submenu__link" href="#" target="_blank" rel="noopener noreferrer">Remeras</a></li>
-                        <li class="submenu__item"><a class="submenu__link" href="#" target="_blank" rel="noopener noreferrer">Llaveros</a></li>
-                    </ul>
-                </li>
-                <li class="navbar__item"><a class="navbar__link" href="pages/contact.html" target="_blank" rel="noopener noreferrer">CONTACTO</a></li>
-                <li class="navbar__item"><a class="navbar__link" href="../proyecto-integrador/pages/login.html" target="_blank" rel="noopener noreferrer">LOGIN</a></li>
-                <li class="navbar__item">
-                    <a class="navbar__cart" href="../proyecto-integrador/shop/carrito.html" target="_blank" rel="noopener noreferrer">
-                    <img src="multimedia/icons/cart-icon.svg" alt="icono de carrito">
-                </a></li>
-            
-            </ul>
-        </nav>
-    </header> <!--FINAL HEADER-->
-</body>
-</html>
+
+<header> <!--INICIO HEADER-->
+    <nav class="navbar container">
+        <picture class="navbar__logo">
+            <a href="/">
+                <img src="/multimedia/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funsoshop">
+            </a>
+        </picture>
+        <ul class="navbar__menu">
+            <li class="navbar__item with-submenu"><a class="navbar__link with-icon" href="/shop" target="_blank" rel="noopener noreferrer">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
+                <ul class="submenu">
+                    <li class="submenu__item"><a class="submenu__link" href="#" target="_blank" rel="noopener noreferrer">Funkos</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#" target="_blank" rel="noopener noreferrer">Remeras</a></li>
+                    <li class="submenu__item"><a class="submenu__link" href="#" target="_blank" rel="noopener noreferrer">Llaveros</a></li>
+                </ul>
+            </li>
+            <li class="navbar__item"><a class="navbar__link" href="/contact" target="_blank" rel="noopener noreferrer">CONTACTO</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="/auth/login" target="_blank" rel="noopener noreferrer">LOGIN</a></li>
+            <li class="navbar__item">
+                <a class="navbar__cart" href="/shop/carrito" target="_blank" rel="noopener noreferrer">
+                <img src="/multimedia/icons/cart-icon.svg" alt="icono de carrito">
+            </a></li>
+        
+        </ul>
+    </nav>
+</header> <!--FINAL HEADER-->

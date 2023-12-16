@@ -4,24 +4,13 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>EDIT</title>
+        <title>Edit | 2023-FunkoShop</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../css/index.css">
     </head>
     <body>
-        <header> <!--INICIO HEADER-->
-            <nav class="navbar container">
-                <picture class="navbar__logo">
-                    <a href="../index.html">
-                        <img src="../multimedia/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funsoshop">
-                    </a>
-                </picture>
-                <ul class="navbar__menu">
-                    <li class="navbar__item with-submenu"><a class="navbar__link with-icon" href="#" target="_blank" rel="noopener noreferrer">SALIR<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
-                </ul>
-            </nav>
-        </header> <!--FINAL HEADER-->
+        <%- include('../partials/header.ejs') %>
         <main id="edit">
             <h2 class="edit__title">EDITAR ITEM</h2>
             <form class="edit__form" action="/admin/edit" method="POST" enctype="application/x-www-form-urlencoded">
@@ -105,24 +94,7 @@
             </form>
         </main>
 
-        <footer class="footer">
-            <nav class="navbar container">
-
-                <ul class="navbar__item">
-                    <li class="navbar__item"><a class="navbar__link" href="../shop/shop.html">SHOP</a></li>
-                    <li class="navbar__item"><a class="navbar__link" href="../pages/register.html">REGISTRARSE</a></li>
-                    <li class="navbar__item"><a class="navbar__link" href="../pages/login.html">LOGIN</a></li>
-                    <li class="navbar__item"><a class="navbar__link" href="pages/contact.html">CONTACTO</a></li>
-                </ul>
-
-                <picture>
-                <img src="../multimedia/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
-                </picture>
-
-            </nav>
-               <p class="footer__copy">All rights reserved 2023-Funkoshop ©</p>
-
-        </footer>
+        <%- include('../partials/footer.ejs') %>
 
         
         <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>

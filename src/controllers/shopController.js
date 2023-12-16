@@ -10,5 +10,5 @@ module.exports = {
     },
     cart: (req, res) => res.send('Esta es la vista del CARRITO'),
     addItem: (req, res) => res.send('Esta es la ruta para AGREGAR un NUEVO ITEM'),
-    addToCart: (req, res) => res.send('Esta es la ruta para AGREGAR un ITEM al CARRITO')
+    addToCart: (req, res) => res.send('Esta es la ruta para AGREGAR un ITEM al Item')
 }
