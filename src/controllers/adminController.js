@@ -1,8 +1,11 @@
-const adminControllers = {
-    admin: (req,res) => res.send('Route for admin view from controllers'),
-    create:(req,res) => res.send('Route for create get view from controllers'),
-    edit: (req,res) => res.send(`Route for edit id ${req.params.id} from controllers`),
-    delete: (req,res) => res.send(`Route for delete  ID ${req.params.id} from controllers`),
- 
-}
-module.exports = adminControllers
+const path = require('path');
+
+module.exports = {
+    admin: (req, res) => res.render(path.resolve(__dirname, '../views/admin/admin.ejs')),
+    createView: (req, res) => res.render(path.resolve(__dirname, '../views/admin/create.ejs')),
+    createItem: (req,res) => res.send('Esta es la ruta para AGREGAR un NUEVO ITEM'),
+    editView: (req,res) => res.render(path.resolve(__dirname, '../views/admin/edit.ejs')),
+    editItem: (req,res) => res.send('Esta es la ruta para plasmar la MODIFICACION de un ITEM ESPECIFICO'),
+    deleteItem:(req,res) => res.send('Esta vista es para ELIMINAR un ITEM ESPECIFICO')
+
+};
