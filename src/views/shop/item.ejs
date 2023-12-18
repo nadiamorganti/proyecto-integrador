@@ -17,14 +17,14 @@
         <main class="container">
             <section class="item">
                 <picture class="item__img card-item__cover">
-                    <img class="card-item__img--front" src="../multimedia/star-wars/baby-yoda-1.webp" alt="Figura coleccionable Funko de star-wars">
-                    <img class="card-item__img--back" src="../multimedia/star-wars/baby-yoda-box.webp" alt="Figura coleccionable Funko de star-wars en caja">
+                    <img class="card-item__img--front" src="<%= item.img_front %>" alt= "<%= item.product_description %>">
+                    <img class="card-item__img--back" src="<%= item.img_back %>" alt= "<%= item.product_description %>" >
                 </picture>
                 <article class="item__info">
-                    <p class="item__licence">STAR WARS</p>
-                    <h3 class="item__name">BABY YODA BLUEBALL</h3>
-                    <p class="item__description">Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada.</p>
-                    <p class="item__price">$ 1799,99.-</p>
+                    <p class="item__licence"><%= item.licence_name %></p>
+                    <h3 class="item__name"><%= item.product_name %></h3>
+                    <p class="item__description"><%= item.product_description %></p>
+                    <p class="item__price">$ <%= item.product_price %>.-</p>
                    <!-- <form  action="#" method="POST" enctype="application/x-www-form-urlencoded"> --> 
                         <div class="item__cart">
                             <button id="subtract" class="item__quantity" type="button">-</button>
@@ -33,7 +33,7 @@
                             <button class="item__submit btn btn--primary btn--medium" type="submit"><a href="../shop/carrito.html">Agregar al carrito de compras</a></button>
                         </div>
                     <!-- </form> --> 
-                    <p class="item__promo"><a href="">Ver métodos de pago</a> - 3 CUOTAS SIN INTERÉS</p>
+                    <p class="item__promo"><a href="">Ver métodos de pago</a> - <%= item.dues %> CUOTAS SIN INTERÉS</p>
                 </article>
             </section>
             <section class="slider container glide">
