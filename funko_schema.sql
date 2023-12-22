@@ -1,0 +1,1 @@
+SELECT * FROM funko_schema.product;
