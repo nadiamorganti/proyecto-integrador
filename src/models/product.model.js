@@ -14,8 +14,10 @@ const getAll = async () => {
         conn.releaseConnection();
     }
    
-};
+}
+
+
 
 module.exports = {
-    getAll
+    getAll,
 }

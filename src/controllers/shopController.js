@@ -135,6 +135,7 @@ module.exports = {
     },
     item: (req, res) => {
         const itemId = req.params.id;
+        
         const item = json.find(item => item.product_id == itemId);
 
         res.render(path.resolve(__dirname, '../views/shop/item.ejs'), {
